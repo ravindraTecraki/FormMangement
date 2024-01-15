@@ -5,6 +5,21 @@
 .navbar-brand{
      font-weight: 500;
 }
-.navbar-item{
- font-weight: 400;
+.nav-item a{
+ font-weight: 500;
+}
+.home-heading{
+    margin-top:150px;
+    font-size: 30px;
+    justify-content: center;
+}
+.home-para{
+    font-size: 20px;
+
+}
+.main-img img{
+    padding: 30px;
+    width: 693px;
+height: 598px;
+flex-shrink: 0;
 }

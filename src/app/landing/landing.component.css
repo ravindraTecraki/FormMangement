@@ -23,3 +23,48 @@
 height: 598px;
 flex-shrink: 0;
 }
+.landing-page{
+    background-color: white;
+}
+#about{
+    margin-bottom: 50px;
+}
+.about-heading{
+    text-align: center;
+}
+.about-heading p{
+    justify-content: center;
+}
+
+.card-sec{
+    margin-top: 50px;
+}
+.card img{
+    width: 30%;
+    
+}
+.card-img-top{
+    margin:auto;
+}
+.card{
+    outline: none;
+    margin: 5px;
+}
+
+
+.mission-heading
+{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+ .mission-img img{
+    height: 500px;
+    width: 500px;
+
+ }
+ 
+
+
+
+ 

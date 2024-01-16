@@ -36,24 +36,18 @@
         </div>
         <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
           <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-            <h1 class="drheading"><a href="http://blog.stackfindover.com/" rel="dofollow">Patients Login </a></h1>
+            <h1 class="drheading"><a href="http://blog.stackfindover.com/" rel="dofollow">Hospital Login </a></h1>
           </div>
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
-                <span class="padding-bottom--15">Please sign in to your account</span>
+                <span class="padding-bottom--15">Please sign in </span>
                 <form (ngSubmit)="pLogin()" id="stripe-login">
                   <div class="field padding-bottom--24">
-                    <label for="email">Email</label>
-                    <input type="email" formControlName="email" name="email">
-                    <div class="text text-danger" *ngIf="Email.errors?.['pattern'] && (Email.touched || Email.dirty)">
-                      Please Enter Correct email
-  
-                    </div>
-                    <div class="text text-danger" *ngIf="Email.errors?.['required'] && (Email.touched || Email.dirty)">
-                      Please Enter Correct email
-  
-                    </div>
+                    <label for="UHID">UHID</label>
+                    <input type="text" formControlName="UHID" name="UHID">
+                    
+                    
                   </div>
                   <div class="field padding-bottom--24">
                     <div class="grid--50-50">

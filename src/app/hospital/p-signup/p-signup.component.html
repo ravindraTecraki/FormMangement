@@ -37,20 +37,20 @@
         </div>
         <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
           <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
-            <h1 class="heading-page"><a href="#" rel="dofollow">Patients Self Registration</a></h1>
+            <h1 class="heading-page"><a href="#" rel="dofollow">Hospital Registration</a></h1>
           </div>
           <div class="formbg-outer">
             <div class="formbg ">
               <div class="formbg-inner padding-horizontal--48 col-12">
-                <span class="padding-bottom--15 fw-bolder">Patients Registration</span>
+               <!-- // <span class="padding-bottom--15 fw-bolder">Patients Registration</span> -->
                 <form class="row g-3 " (ngSubmit)=" P_register()">
                   <div class="col-md-6 field padding-bottom--24">
-                    <label for="inputEmail4" class="form-label">First Name </label>
-                    <input type="text" formControlName="firstname" class="form-control" placeholder="First name"
-                      aria-label="First name" />
+                    <label for="inputEmail4" class="form-label">Hospital Name </label>
+                    <input type="text" formControlName="hospitalname" class="form-control" placeholder="Hospital name"
+                      aria-label="Hospital name" />
                     <div class="text text-danger"
                       *ngIf="Firstname.errors?.['required'] && (Firstname.touched || Firstname.dirty)">
-                      First Name is required
+                      Hospital name is required
                     </div>
                     <div class="text text-danger"
                       *ngIf="Firstname.errors?.['minlength'] && (Firstname.touched || Firstname.dirty)">
@@ -63,22 +63,14 @@
                   </div>
   
                   <div class="col-md-6 field padding-bottom--24">
-                    <label for="inputEmail4" class="form-label">Last Name</label>
-                    <input type="text" formControlName="lastname" class="form-control" placeholder="Last name"
-                      aria-label="Last name" />
-                      <div class="text text-danger" *ngIf="Lastname.errors?.['required'] && (Lastname.touched || Lastname.dirty)">
-                        Last Name is required
-                    </div>
-                    <div class="text text-danger"
-                        *ngIf="Lastname.errors?.['minlength'] && (Lastname.touched || Lastname.dirty)">
-                        name is too short
-                    </div>
-                    <div class="text text-danger" *ngIf="Lastname.errors?.['pattern'] && (Lastname.touched || Lastname.dirty)">
-                        Name does not contain Numeric character
-                    </div>
+                    <label for="inputEmail4" class="form-label">Hospital Logo</label>
+                    <input type="image" formControlName="hospitallogo" class="form-control" placeholder="Hospital Logo"
+                      aria-label="Hospital Logo" />
+                     
+                    
                   </div>
                   <div class="col-md-6 field padding-bottom--24">
-                    <label for="inputEmail4" class="form-label">Email</label>
+                    <label for="inputEmail4" class="form-label">Hospital Email</label>
                     <input type="email" class="form-control" id="inputEmail4" placeholder="example@email.com"
                       formControlName="email" />
                     <div class="text text-danger" *ngIf="Email.errors?.['pattern'] && (Email.touched || Email.dirty)">
@@ -91,8 +83,8 @@
                     </div>
                   </div>
                   <div class="col-md-6 field padding-bottom--24">
-                    <label for="inputEmail4" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="inputEmail4" placeholder="**********"
+                    <label for="inputEmail4" class="form-label">Hospital Phone Number</label>
+                    <input type="tel" class="form-control" id="inputEmail4" 
                       formControlName="phone" />
                  
                       <div class="text text-danger" *ngIf="Phone.errors?.['pattern'] && (Phone.touched || Phone.dirty)">
@@ -102,53 +94,21 @@
                           Phone is required
                       </div>
                   </div>
-                
-                 
-                  <div class="col-6 field padding-bottom--24">
-                    <label for="inputAddress" class="form-label">Aadhar No </label>
-                    <input type="number" class="form-control" id="Aadhar" placeholder="**** **** *****"
-                      formControlName="aadhar" />
-                        <div class="text text-danger" *ngIf="Aadhar.errors?.['pattern'] && (Aadhar.touched || Aadhar.dirty)">
-                          Please enter 10 Digit number
-                      </div>
-                      <div class="text text-danger" *ngIf="Aadhar.errors?.['required'] && (Aadhar.touched || Aadhar.dirty)">
-                          Aadhar is required
-                      </div> 
-                  </div>
-                
-                  <div class="col-3 field padding-bottom--24">
-                    <label for="inputAddress" class="form-label">Gender</label>
-                    <select type="text" class="form-control field padding-bottom--24" id="gender" placeholder="Sex"
-                      formControlName="gender" >
-                     <option value="Male">Male</option>
-                     <option value="Female"> Female</option>
-                     <option value="Others">Others </option>
-                    
-                    </select>
-                    <div class="text text-danger" *ngIf="Gender.errors?.['required'] && (Gender.touched || Gender.dirty)">
-                      Gender is required 
-                  </div>
-                  </div>
 
-                  <div class="col-md-3 field padding-bottom--24">
-                    <label for="inputAddress" class="form-label">Age</label>
-                    <input type="number" class="form-control" id="age" placeholder="Age in years "
-                      formControlName="age" />
-                      <div class="text text-danger" *ngIf="Age.errors?.['pattern'] && (Age.touched || Age.dirty)">
-                        Age must be positive
-                    </div>
-                    <div class="text text-danger" *ngIf="Age.errors?.['required'] && (Age.touched || Age.dirty)">
-                        Age is required
-                    </div>
-                    <div class="text text-danger" *ngIf="Age.errors?.['min'] && (Age.touched || Age.dirty)">
-                        please enter Valid age
-                    </div>
-                    <div class="text text-danger" *ngIf="Age.errors?.['max'] && (Age.touched || Age.dirty)">
-                        Please enter valid Age
-                    </div>
-                  </div>
                   <div class="col-md-12 field padding-bottom--24">
-                    <label for="inputAddress" class="form-label">Address</label>
+                    <label for="inputEmail4" class="form-label">Hospital Website</label>
+                    <input type="url" class="form-control" id="inputEmail4" placeholder="wwww.website.com"
+                      formControlName="phone" />
+                  </div>
+                 
+
+
+
+
+
+
+                  <div class="col-md-12 field padding-bottom--24">
+                    <label for="inputAddress" class="form-label">Hospital Address</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"
                       formControlName="address" />
                       <div class="text text-danger" *ngIf="Address.errors?.['required'] && (Address.touched || Address.dirty)">
@@ -267,6 +227,13 @@
                   <div class="col-6 field padding-bottom--24">
                     <button type="submit" class=" signup-button btn btn-primary">Register</button>
                   </div>
+
+                  <div class="col-6 field padding-bottom--24">
+                    <button type="submit" class=" signup-button btn btn-primary">Print Preview</button>
+                  </div>
+
+
+
                   <p>Already have a account <a routerLink="patients-login"> Login Here </a></p>
                 </form>
   

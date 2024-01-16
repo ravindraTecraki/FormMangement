@@ -1,24 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
-import { HospitalRegistrationComponent } from './hospital-registration/hospital-registration.component';
-import { HospitalloginComponent } from './hospitallogin/hospitallogin.component';
 
-
+import { PLoginComponent } from './hospital/p-login/p-login.component';
+import { RegistrationComponent } from './hospital/registration/registration.component';
+import { PSignupComponent } from './hospital/p-signup/p-signup.component';
 const routes: Routes = [
   {
     path:'',
     component:LandingComponent
-  },{
-    path:'hospital_registration',
-    component:HospitalRegistrationComponent
-  },
-  {
-    path:'hospital_login',
-    component:HospitalloginComponent
   }
-
-
+, {
+  path:'login',
+  component:PLoginComponent
+}
+,{
+  path:'reg',
+  component:RegistrationComponent
+},{
+  path:'signup',
+  component:PSignupComponent
+}
 
 ];
 

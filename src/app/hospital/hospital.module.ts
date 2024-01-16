@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 import { PLoginComponent } from './p-login/p-login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { PSignupComponent } from './p-signup/p-signup.component';

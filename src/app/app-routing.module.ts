@@ -5,6 +5,7 @@ import { LandingComponent } from './landing/landing.component';
 import { PLoginComponent } from './hospital/p-login/p-login.component';
 import { RegistrationComponent } from './hospital/registration/registration.component';
 import { PSignupComponent } from './hospital/p-signup/p-signup.component';
+import { CommonModule } from '@angular/common';
 const routes: Routes = [
   {
     path:'',
@@ -27,8 +28,9 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
- 
+  imports: [RouterModule.forRoot(routes), CommonModule],
+
+
 exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,26 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingComponent } from './landing/landing.component';
-
-import { PLoginComponent } from './hospital/p-login/p-login.component';
-import { RegistrationComponent } from './hospital/registration/registration.component';
-import { PSignupComponent } from './hospital/p-signup/p-signup.component';
+import { LandingComponent } from './landing/landing-page/landing.component';
+import { Hospital_reg } from './hospital/component/hospital_reg/hospital-re';
 import { CommonModule } from '@angular/common';
+import { HDashboardComponent } from './hospital/component/h-dashboard/h-dashboard.component';
+import { HospitalLoginComponent } from './hospital/component/hospital_login/hospital_login.component';
+
 const routes: Routes = [
   {
     path:'',
     component:LandingComponent
   }
 , {
-  path:'login',
-  component:PLoginComponent
-}
-,{
   path:'reg',
-  component:RegistrationComponent
-},{
-  path:'signup',
-  component:PSignupComponent
+  component:Hospital_reg
+}
+,
+
+{
+  path:"dashboard",
+  component:HDashboardComponent
+}
+,
+{
+  path:"login",
+  component:HospitalLoginComponent
 }
 
 ];

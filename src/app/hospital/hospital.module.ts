@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {  ReactiveFormsModule } from '@angular/forms';
-import { PLoginComponent } from './p-login/p-login.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { PSignupComponent } from './p-signup/p-signup.component';
-
-
-
+import { HospitalLoginComponent } from './component/hospital_login/hospital_login.component';
+import { Hospital_reg } from './component/hospital_reg/hospital-re';
+import { HDashboardComponent } from './component/h-dashboard/h-dashboard.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [PLoginComponent,RegistrationComponent,PSignupComponent ],
+  declarations: [HospitalLoginComponent,Hospital_reg, HDashboardComponent ],
   imports: [
     CommonModule,ReactiveFormsModule
   ]

@@ -6,18 +6,19 @@ import { LandingComponent } from './landing/landing-page/landing.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HospitalModule } from './hospital/hospital.module';
+import { LandingModule } from './landing/landing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     ReactiveFormsModule, 
-    RouterModule
+    RouterModule,HospitalModule,LandingModule
   ],
   providers: [
     provideClientHydration()

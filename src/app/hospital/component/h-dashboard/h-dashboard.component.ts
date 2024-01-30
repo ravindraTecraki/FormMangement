@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './h-dashboard.component.css'
 })
 export class HDashboardComponent {
+  // isSidebarCollapsed = false;
+
+  // toggleSidebar() {
+  //   this.isSidebarCollapsed = !this.isSidebarCollapsed;
+  // }
 
 }

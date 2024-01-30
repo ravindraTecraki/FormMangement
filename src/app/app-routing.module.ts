@@ -11,21 +11,21 @@ const routes: Routes = [
     path:'',
     component:LandingComponent
   }
-, {
-  path:'reg',
-  component:Hospital_reg
-}
-,
+// , {
+//   path:'reg',
+//   component:Hospital_reg
+// }
+// ,
 
-{
-  path:"dashboard",
-  component:HDashboardComponent
-}
-,
-{
-  path:"login",
-  component:HospitalLoginComponent
-}
+// {
+//   path:"dashboard",
+//   component:HDashboardComponent
+// }
+// ,
+// {
+//   path:"login",
+//   component:HospitalLoginComponent
+// }
 
 ];
 
